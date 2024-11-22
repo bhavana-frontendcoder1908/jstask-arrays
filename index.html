@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        console.log("Task-1")
+        let favoritemovie=["KGF","Hi! Nanna","Sitaramam","Balu","OG!","Billa"]
+        console.log("Array of My Favorite Movies")
+        console.log("Iterating By Using For Loop")
+        for(i=0;i<favoritemovie.length;i++){
+            // console.log(favoritemovie[i])
+        }
+        console.log(`[${favoritemovie.join(', ')}]`);
+
+        
+        console.log("Iterating By Using For-of Loop")
+        for(let fav in favoritemovie){
+            // console.log(favoritemovie[fav])
+        }
+        console.log(`[${favoritemovie.join(', ')}]`);
+
+
+        console.log("Iterating By Using For-in Loop")
+        for(let mov in favoritemovie){
+            // console.log(favoritemovie[mov])
+        }
+        console.log(`[${favoritemovie.join(', ')}]`);
+
+
+
+        console.log("Task-2")
+        let favmov=["KGF","Hi! Nanna","Sitaramam","Balu","OG!","Billa"]
+        console.log("The Array is                                     "+favmov)
+        favmov.shift()
+        console.log("After Removing First Element In The Array is     "+favmov)
+        favmov.pop()
+        console.log("After Removing Last Element In The Array is      "+favmov)
+
+
+
+        console.log("Task-3")
+        let original=[10,20,30,40,50]
+        let reverse=[]
+        for (let i=original.length-1;i>=0;i--){
+        reverse.push(original[i])
+        }
+        // console.log(reverse)
+        console.log("The Original Array is   "+original)
+        console.log(`The Reversed Array is  [${reverse.join(', ')}]`);
+
+
+
+        console.log("Task-4")
+
+        let numbers = [12, 3, 5, 6, 22, 56, 29];
+        console.log("The Original Array is  "+numbers)
+        let evenNumbers = [];
+        let oddNumbers = [];
+        let evenSum = 0;
+        let oddSum = 0;
+
+        for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+        evenNumbers.push(numbers[i])
+        evenSum += numbers[i]
+        } 
+        else {
+        oddNumbers.push(numbers[i])
+        oddSum += numbers[i]
+        }
+        }
+        console.log("Even numbers: " + evenNumbers)
+        console.log("Sum of even numbers: " + evenSum)
+        console.log("Odd numbers: " + oddNumbers)
+        console.log("Sum of odd numbers: " + oddSum)
+
+
+
+
+        console.log("Task-5")
+        let arr = ["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, {name: "object"}];
+
+        console.log("The Original Array is "+arr)
+
+        let num = [];
+        let str = [];
+        let bool = [];
+        let obj = [];
+
+
+        for (let i = 0; i < arr.length; i++) {
+        
+        if (typeof arr[i] === 'number') {
+        num.push(arr[i])
+        } 
+        
+        else if (typeof arr[i] === 'string') {
+        str.push(arr[i])
+        }
+        
+        else if (typeof arr[i] === 'boolean') {
+        bool.push(arr[i])
+        }
+        
+        else if (typeof arr[i] === 'object') {
+        obj.push(arr[i])
+        }
+        }
+
+        console.log("num =", num)
+        console.log(`The Number Array is  [${num.join(', ')}]`);
+        console.log("str =", str) 
+        console.log(`The String Array is  [${str.join(', ')}]`);
+        console.log("bool =", bool)
+        console.log(`The Boolean Array is  [${bool.join(', ')}]`);
+        console.log("obj =", obj)
+        console.log(`The Object Array is  [${obj.join(', ')}]`);
+    </script>
+    <script>
+
+        console.log("Problem Solving")
+        console.log("Task-1")
+        console.log("printing of 10 to 1 numbers withnot using lessthan or greater than symbol")
+        for(i=10;!(i==0);i--){
+        console.log(i);
+        }
+        
+
+        console.log("Task-2")
+        console.log("printing -1 tp -10 numbers with not using > or < symbol")
+        for(j=-1;!(j==-10-1);j--){
+        console.log(j)
+        }
+
+        console.log("Task-3")
+        console.log("adding the numbers given in the string")
+        num = prompt("Enter any numbers")
+        // var inp=123;
+        // var num=String(inp)
+        var sum=0;
+        console.log ("The numbers in the given string is")
+        for(k=0;k < num.length;k++){
+        console.log(num[k])
+        sum=sum+Number(num[k])
+        }
+        console.log("The sum of the given numbers is  "+sum)
+
+    </script>
+</body>
+</html>
